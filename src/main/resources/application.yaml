@@ -1,0 +1,31 @@
+spring:
+  application:
+    name: "configserver"
+  profiles:
+  # active: native  #mention this whenever you are using classpath/file system as central repo to store config filesgit
+    active: git
+
+  rabbitmq:
+    host: "localhost"
+    port: 5672
+    username: "guest"
+    password: "guest"
+
+  cloud:
+    config:
+      server:
+       #native:
+        # search-locations: "classpath:/config"
+        git:
+          uri: "https://github.com/sahilkaul52/BankingProject-Configuration.git"
+          default-label: main
+          timeout: 5
+          clone-on-start: true
+          force-pull: true  #to override local changes
+
+encrypt:
+  key: "45D81EC1EF6DF9"
+
+server:
+  port: 8071
+
