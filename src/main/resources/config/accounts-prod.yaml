@@ -1,5 +1,6 @@
-version: "^1.0^"
-
+build:
+  version: "3.3" 
+  
 accounts:
   message: "Welcome to EazyBank accounts related prod APIs "
   contactDetails:
