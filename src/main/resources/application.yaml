@@ -5,12 +5,6 @@ spring:
   # active: native  #mention this whenever you are using classpath/file system as central repo to store config filesgit
     active: git
 
-  rabbitmq:
-    host: "localhost"
-    port: 5672
-    username: "guest"
-    password: "guest"
-
   cloud:
     config:
       server:
