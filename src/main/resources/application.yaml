@@ -11,7 +11,7 @@ spring:
        #native:
         # search-locations: "classpath:/config"
         git:
-          uri: "https://github.com/sahilkaul52/BankingProject-Configuration.git"
+          uri: "https://github.com/sahilkaul52/spring-cloud-config-v2.git"
           default-label: main
           timeout: 5
           clone-on-start: true
